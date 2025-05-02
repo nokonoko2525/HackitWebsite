@@ -1,0 +1,74 @@
+.title {
+    text-align: center;
+    font-size: 100px;
+    color: #fd7622;
+    font-weight: bold;
+}
+
+.main_explain {
+    background-color: transparent;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.sub_explain {
+    text-align: center;
+}
+
+
+.flow_title{
+    text-align: center;
+    color: white;
+}
+
+.content_text {
+    text-align: center;
+    color: #fd7622;;
+    font-size: 40px;
+}
+
+.summary_text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logotext {
+    margin-top: 4%;
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sponsor {
+    background-color: white;
+    display: flex;
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media screen and (max-width: 640px) {
+    .title{
+        font-size: 35px;
+    }
+
+    .content_text {
+        font-size: 25px;
+    }
+
+    .sponsor_text {
+        font-size: 20px;
+    }
+
+    .summary_text {
+        font-size: 14px;
+    }
+
+    .logotext {
+        margin-top: 5%;
+        font-size: 25px;
+    }
+}
