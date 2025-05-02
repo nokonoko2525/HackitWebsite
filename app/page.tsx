@@ -60,6 +60,13 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Q＆A */}
+      <div className={styles.main}>
+        <h2 className={styles.content_text}>
+          Q&A
+        </h2>
+      </div>
+
     </div>
   );
 }
