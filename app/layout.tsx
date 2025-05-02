@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./components/layout/Footer";
+import "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
 
 export const metadata: Metadata = {
   title: "Hackit Homepage",
@@ -13,8 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+
       <body className="background-image">
-        {children}
+        <Header/>
+          {children}
+        <Footer/>
       </body>
     </html>
   );
