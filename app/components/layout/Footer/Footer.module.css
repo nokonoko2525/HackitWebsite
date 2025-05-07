@@ -1,34 +1,86 @@
 .footer {
-    background-color: #666;
-    height: 60px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 100vh;
-}
-.footer ul {
-    /* 表示幅を90%に */
-    width: 98%;
-    /* フレックスボックス化 */
-    display: flex;
-    /* 先頭のポチをなくす */
-    list-style: none;
-    /* 余白の自動調整 （上下の余白は0、左右は自動調整）*/
+    background-color: #1a1a1a;
+    color: white;
+    padding: 3rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    /* 高さを50pxに指定 */
-    height: 50px;
-}
-
-.hackit { 
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*スマホ対応*/
-@media screen and (max-width: 640px) {
-    .footer {
-        background-color: #666;
+    padding: 0 1rem;
+  }
+  
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footerInfo {
+    margin-bottom: 1rem;
+  }
+  
+  .footerTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footerDescription {
+    color: #aaa;
+    line-height: 1.6;
+  }
+  
+  .footerSubtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerLink {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .footerLink:hover {
+    color: #fd7622;
+  }
+  
+  .contactText {
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .contactLink {
+    color: #fd7622;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contactLink:hover {
+    color: #ff9800;
+  }
+  
+  .copyright {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #777;
+  }
+  
+  @media (min-width: 768px) {
+    .footerGrid {
+      grid-template-columns: 2fr 1fr 1fr;
     }
-}
+  }
+  

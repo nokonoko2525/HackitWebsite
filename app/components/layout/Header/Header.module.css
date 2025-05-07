@@ -1,57 +1,152 @@
-.Header {
-    background-color:white;
-    position: sticky;
+.header {
+    position: fixed;
     top: 0;
-}
-
-.Header ul {
-    /* 表示幅を90%に */
-    width: 98%;
-    /* フレックスボックス化 */
-    display: flex;
-    /* 先頭のポチをなくす */
-    list-style: none;
-    /* 余白の自動調整 （上下の余白は0、左右は自動調整）*/
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: all 0.3s ease;
+    padding: 1.25rem 0;
+  }
+  
+  .scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    /* 高さを50pxに指定 */
-    height: 50px;
-}
-
-.Header a {
-    /* アンダーライン削除 */
+    padding: 0 1rem;
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
     text-decoration: none;
-    /* 文字色設定 */
-    color: #fff;
-    /* 内側余白を上右下左の順で設定 */
-    padding: 10px 20px 10px 0px;
-    /*ブロックにする */
+    transition: color 0.3s ease;
+  }
+  
+  .scrolled .logo {
+    color: #fd7622;
+  }
+  
+  .desktopNav {
+    display: none;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .scrolled .navLink {
+    color: #333;
+  }
+  
+  .navLink:hover {
+    color: #fd7622;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .menuIcon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menuIcon span {
     display: block;
-    /* 文字を大き目に設定 */
-    font-size: large;
-}
-
-.Header a:hover {
-    /* マウスオーバーした時の文字色を設定 */
-    color: #aaa;
-}
-
-@media screen and (max-width: 640px) {
-    .Header {
-        background-color: white;
-        height: 50px;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .scrolled .menuIcon span {
+    background-color: #333;
+  }
+  
+  .menuIcon.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .menuIcon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menuIcon.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  
+  .mobileNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .mobileNavList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mobileNavLink {
+    display: block;
+    padding: 0.75rem 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: color 0.3s ease;
+  }
+  
+  .scrolled .mobileNavLink {
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobileNavLink:hover {
+    color: #fd7622;
+  }
+  
+  @media (min-width: 768px) {
+    .desktopNav {
+      display: block;
     }
-
-    .Header ul {
-        flex-direction: column;
-        padding: 0;
+  
+    .menuButton {
+      display: none;
     }
-
-    .Header li {
-        border-bottom: solid 1px #fff;
+  
+    .mobileNav {
+      display: none;
     }
-
-    .hackit {
-        width: 90px;
-        height: 50px
-    }
-}
+  }
+  
