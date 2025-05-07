@@ -23,7 +23,7 @@ export default function Home() {
           Hackit-connect
         </h2>
         <p className={styles.summary_text}>
-        「KIT Developers Hub」が企画・運営する学内ハッカソン
+        「KIT Developers Hub」が企画・運営する学内ハッカソンです
         </p>
         <p className={styles.sub_explain}>
           ここにHackitの説明記入
