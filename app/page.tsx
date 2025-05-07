@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./page.module.css";
+import { Bungee_Shade } from "next/font/google";
 import { Rampart_One } from "next/font/google";
-import Image from 'next/image'
+
+const BungeeShadeFont = Bungee_Shade({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const RampartOneFont = Rampart_One({
   weight: "400",
@@ -12,9 +17,9 @@ export default function Home() {
   return (
     <div>
       {/* タイトル */}
-      <div className={RampartOneFont.className}>
-        <h1 className={styles.title}>出会いが未来を変える</h1>
-        <h1 className={styles.title}>HacKit-Connect</h1>
+      <div className={BungeeShadeFont.className}>
+        <h1 className={styles.title}>HacKit2</h1>
+        <h1 className={styles.subtitle}>-Connect-</h1>
       </div>
 
       {/* Hackitについての説明文 */}

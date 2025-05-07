@@ -19,9 +19,19 @@ export default function RootLayout({
     <html lang="ja">
 
       <body className="background-image">
-        <Header/>
-          {children}
-        <Footer/>
+        {/* <Header/> */}
+          {/* {children} */}
+          <div style={{ 
+            fontSize: "60px", 
+            display: "flex", 
+            justifyContent: "center", 
+            alignItems: "center", 
+            height: "100vh", 
+            textAlign: "center"
+          }}>
+            5 / 17 公開予定です
+          </div>
+        {/* <Footer/> */}
       </body>
     </html>
   );

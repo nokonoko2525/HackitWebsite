@@ -5,6 +5,13 @@
     font-weight: bold;
 }
 
+.subtitle {
+    text-align: center;
+    font-size: 50px;
+    color: #fd7622;
+    font-weight: bold;
+}
+
 .main_explain {
     background-color: transparent;
     margin-bottom: 10%;
