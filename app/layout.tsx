@@ -19,9 +19,9 @@ export default function RootLayout({
     <html lang="ja">
 
       <body className="background-image">
-        <Header/>
+        {/* <Header/> */}
           {children}
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
   );
