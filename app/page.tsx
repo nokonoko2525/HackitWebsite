@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className={styles.title}>HacKit</h1>
             <h2 className={styles.subtitle}>-Connect-</h2>
           </div>
-          <p className={styles.heroText}>金沢工業大学の課外活動プロジェクト同士の交流を目的とした学内ハッカソン</p>
+          <p className={styles.heroText}>金沢工業大学のプロジェクト同士の交流を目的とした学内ハッカソン</p>
           <div className={styles.buttonGroup}>
             <a href="#schedule" className={styles.primaryButton}>
               スケジュール
