@@ -34,8 +34,8 @@ export default function Footer() {
           <div className={styles.footerContact}>
             <h4 className={styles.footerSubtitle}>お問い合わせ</h4>
             <p className={styles.contactText}>ご質問やお問い合わせは下記までお願いします。</p>
-            <a href="mailto:hackit@example.com" className={styles.contactLink}>
-              hackit@example.com
+            <a href="mailto:akokoa1221@gmail.com" className={styles.contactLink}>
+              akokoa1221@gmail.com
             </a>
           </div>
         </div>

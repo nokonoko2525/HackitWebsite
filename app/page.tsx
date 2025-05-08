@@ -200,13 +200,15 @@ export default function Home() {
           <div className={styles.sponsorSection}>
             <h3 className={`${styles.sponsorTier} ${styles.premiumTier}`}>プレミアムスポンサー</h3>
             <div className={styles.premiumSponsors}>
-              {[1, 2, 3].map((i) => (
-                <div key={i} className={styles.premiumSponsorLogo}>
-                  <div className={styles.logoPlaceholder}>
-                    <span>ロゴ {i}</span>
-                  </div>
-                </div>
-              ))}
+              <div className={styles.premiumSponsorLogo}>
+                <img src="/sponsors/cyberagent.png" alt="Company 1 ロゴ" />
+              </div>
+              <div className={styles.premiumSponsorLogo}>
+                <img src="/sponsors/DMM.png" alt="Company 2 ロゴ" />
+              </div>
+              <div className={styles.premiumSponsorLogo}>
+                <img src="/sponsors/timee.jpg" alt="Company 3 ロゴ" />
+              </div>
             </div>
           </div>
 
@@ -214,18 +216,14 @@ export default function Home() {
           <div className={styles.sponsorSection}>
             <h3 className={`${styles.sponsorTier} ${styles.standardTier}`}>スタンダードスポンサー</h3>
             <div className={styles.standardSponsors}>
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                <div key={i} className={styles.standardSponsorLogo}>
-                  <div className={styles.logoPlaceholder}>
-                    <span>ロゴ {i}</span>
-                  </div>
-                </div>
-              ))}
+              <div className={styles.standardSponsorLogo}>
+                <img src="/sponsors/mixi.jpg" alt="mixi ロゴ" />
+              </div>
             </div>
           </div>
 
           {/* Light Sponsors */}
-          <div className={styles.sponsorSection}>
+          {/* <div className={styles.sponsorSection}>
             <h3 className={`${styles.sponsorTier} ${styles.lightTier}`}>ライトスポンサー</h3>
             <div className={styles.lightSponsors}>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
@@ -236,7 +234,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -253,7 +251,7 @@ export default function Home() {
               },
               {
                 q: "参加費はかかりますか？",
-                a: "参加費は無料です。食事や飲み物も提供されます。",
+                a: "参加費は無料です。食事や飲み物はご自身でご用意ください。",
               },
               {
                 q: "何を持っていけばいいですか？",
@@ -262,10 +260,6 @@ export default function Home() {
               {
                 q: "プログラミング経験がなくても参加できますか？",
                 a: "はい、初心者も歓迎します。チーム内でサポートし合いながら進めることができます。また、事前勉強会も予定していますので、ぜひご参加ください。",
-              },
-              {
-                q: "チームはどのように決まりますか？",
-                a: "チームは当日に決定します。多様なスキルセットを持つメンバーでチームを構成できるよう配慮します。",
               },
             ].map((item, index) => (
               <div key={index} className={styles.faqCard}>
@@ -282,7 +276,12 @@ export default function Home() {
         <div className={styles.ctaContent}>
           <h2 className={`${BungeeShadeFont.className} ${styles.ctaTitle}`}>HacKit-Connect</h2>
           <p className={styles.ctaText}>新たな繋がりと挑戦の場へ。あなたの参加をお待ちしています！</p>
-          <a href="#" className={styles.ctaButton}>
+          <a 
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=Xbxum3IjmUClZWULy8MnTzVBE4P7I9FCh5Yzm7h6kLpUQzk5VEU1NFU2WkozRExSMjFIQUUzUFBSNy4u" 
+            className={styles.ctaButton}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             参加申し込み
           </a>
         </div>
